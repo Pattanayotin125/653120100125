@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>คอมพิวเตอร์กราฟฟิก</h1>
+        <h2 id="st-name">พัฒนโยธิน สร้อยมาตร</h2>
+        <h3 id="st-id">653120100125</h3>
+
+        <button id="toggle-button" onclick="toggleLanguage()">เปลี่ยนภาษา</button><br> <br>
+        <a href="Lab02/lab2.html"><button>lab02</button></a><br> <br>
+        <a href="Lab03/lab3.html"><button>lab03</button></a><br> <br>
+        <a href="Lab04/lad4.html"><button>lab04</button></a><br> <br>
+        <a href="Lab05/lab05.html"><button>lab05</button></a><br> <br>
+        <a href="Lab06/lab06.html"><button>Lab06</button></a><br> <br>
+        <a href="Lab07/lab07.html"><button>Lab07</button></a><br> <br>
+        <a href="Lab08/lab08.html"><button>Lab08</button></a><br> <br>
+        <a href="Lab09/lab09.html"><button>Lab09</button></a><br> <br>
+        <a href="Lab10/lab10.html"><button>Lab10</button></a>
+        
+    </div>
+
+    <script>
+        let isThai = true;
+
+        function toggleLanguage() {
+            const nameElement = document.getElementById('st-name');
+            const buttonElement = document.getElementById('toggle-button');
+            if (isThai) {
+                nameElement.innerHTML = 'pattanayotin sroymret';
+                buttonElement.innerHTML = 'Change Language';
+                isThai = false;
+            } else {
+                nameElement.innerHTML = 'พัฒนโยธิน สร้อยมาตร';
+                buttonElement.innerHTML = 'เปลี่ยนภาษา';
+                isThai = true;
+            }
+        }
+    </script>
+</body>
+</html>
